@@ -1,0 +1,85 @@
+/* General Body Styling */
+body {
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background: #ffffff;
+}
+
+/* Headings */
+h1, h2, h4 {
+    font-weight: 700;
+    color: #6f42c1;
+}
+
+/* Button Styling */
+.btn-primary {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 12px 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(118, 75, 162, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #5a67d8, #6b46c1);
+    box-shadow: 0 6px 15px rgba(108, 92, 231, 0.5);
+}
+
+/* Back Button */
+.btn-outline-secondary {
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f1f1f1;
+    color: #6f42c1;
+}
+
+/* Symptom List */
+.form-check-label {
+    text-transform: capitalize;
+}
+
+.form-check-input:checked {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+}
+
+/* List Group for Precautions */
+.list-group-item {
+    border: none;
+    background-color: #fdf0ff;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    color: #5a189a;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f3d9fa;
+}
+
+/* Container Padding */
+.card-body {
+    padding: 2rem;
+}
+
+/* Scrollable Checkbox Area */
+.form-check {
+    max-height: 300px;
+    overflow-y: auto;
+}
