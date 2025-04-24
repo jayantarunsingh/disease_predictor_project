@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  disease-predictor-app:
+    image: jayant1054/disease-predictor:latest
+    ports:
+      - "5000:5000"
+    networks:
+      - disease-net
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints: [node.role == manager]
+    environment:
+      - FLASK_ENV=production
+
+networks:
+  disease-net:
+    driver: overlay
