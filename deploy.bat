@@ -32,7 +32,7 @@ docker swarm init
 
 REM Create overlay network if it doesn't exist
 echo Creating overlay network...
-docker network create --driver overlay %NETWORK_NAME% 2>nul || echo Network already exists
+docker network create --driver overlay %STACK_NAME%_%NETWORK_NAME% 2>nul || echo Network already exists
 
 REM Deploy stack
 echo Deploying stack "%STACK_NAME%"...
