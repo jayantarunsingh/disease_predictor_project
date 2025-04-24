@@ -6,7 +6,7 @@ services:
     ports:
       - "5000:5000"
     networks:
-      - disease-net
+      - overlay-network
     deploy:
       replicas: 1
       restart_policy:
@@ -17,5 +17,5 @@ services:
       - FLASK_ENV=production
 
 networks:
-  disease-net:
+  overlay-network:
     driver: overlay

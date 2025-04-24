@@ -4,7 +4,7 @@ setlocal EnableDelayedExpansion
 REM Variables
 set STACK_NAME=my_stack
 set COMPOSE_FILE=docker-compose.yml
-set NETWORK_NAME=disease-net
+set NETWORK_NAME=overlay-network
 
 REM Function to clean up existing stack and swarm
 echo Cleaning up existing stack and swarm...
@@ -32,7 +32,7 @@ docker swarm init
 
 REM Create overlay network if it doesn't exist
 echo Creating overlay network...
-docker network create --driver overlay %STACK_NAME%_%NETWORK_NAME% 2>nul || echo Network already exists
+docker network create --driver overlay %NETWORK_NAME% 2>nul || echo Network already exists
 
 REM Deploy stack
 echo Deploying stack "%STACK_NAME%"...
