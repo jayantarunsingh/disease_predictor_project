@@ -413,7 +413,7 @@ HTML_TEMPLATE = """
 <body>
     <header>
         <div class="container">
-            <h1>AI Image Classifier</h1>
+            <h1>AI Image Classifier using CNN Model</h1>
             <p>Upload your images and let our advanced AI model identify and classify them with remarkable accuracy.</p>
         </div>
     </header>
