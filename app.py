@@ -64,7 +64,7 @@ HTML_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Image Classifier</title>
+    <title>AI Image Classifier Using CNN</title>
     <style>
         :root {
             --primary-color: #4361ee;
